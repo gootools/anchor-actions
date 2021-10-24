@@ -3,4 +3,5 @@
 pwd
 ls
 yarn install
+solana-keygen new
 anchor test
