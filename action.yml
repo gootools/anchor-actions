@@ -1,0 +1,5 @@
+name: "Anchor actions"
+description: "GitHub actions for @project-serum/anchor"
+runs:
+  using: "docker"
+  image: "Dockerfile"
