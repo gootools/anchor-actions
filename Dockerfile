@@ -7,8 +7,6 @@ FROM solanalabs/solana:${SOLANA_VERSION}
 ARG ANCHOR_VERSION
 ARG NODE_VERSION
 
-USER root
-
 RUN apt-get update -y && \
     apt-get install curl -y && \
     curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - && \
@@ -21,7 +19,4 @@ RUN npm install -g  yarn \
                     mocha \
                     chai
 
-RUN yarn install
-
-ENTRYPOINT []
-CMD ["anchor", "test"]
+ENTRYPOINT ["./entrypoint.sh"]
