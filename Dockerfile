@@ -19,8 +19,6 @@ RUN npm install -g  yarn \
                     mocha \
                     chai
 
-WORKDIR /github/workspace/
-
 RUN yarn install
 
 ENTRYPOINT []
