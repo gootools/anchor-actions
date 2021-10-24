@@ -2,4 +2,4 @@
 
 yarn install
 solana-keygen new --no-bip39-passphrase --silent
-npx @project-serum/anchor-cli@0.17.0 test
+anchor test --provider.wallet /github/home/.config/solana/id.json
