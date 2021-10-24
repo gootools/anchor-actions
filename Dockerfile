@@ -13,7 +13,6 @@ RUN apt-get update -y && \
     apt-get install -y nodejs
 
 RUN npm install -g  yarn \
-                    @project-serum/anchor-cli@${ANCHOR_VERSION} \
                     typescript \
                     ts-mocha \
                     mocha \
