@@ -19,14 +19,9 @@ RUN npm install -g  yarn \
                     mocha \
                     chai
 
-WORKDIR /app
-
-COPY package.json .
-COPY yarn.lock .
+WORKDIR /github/workspace/
 
 RUN yarn install
-
-COPY . .
 
 ENTRYPOINT []
 CMD ["anchor", "test"]
