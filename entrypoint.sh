@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-yarn install
+yarn install --production=false --frozen-lockfile
 solana-keygen new --no-bip39-passphrase --silent
-anchor test --provider.wallet /github/home/.config/solana/id.json
+anchor test
