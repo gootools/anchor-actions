@@ -19,4 +19,6 @@ RUN npm install -g  yarn \
                     mocha \
                     chai
 
-ENTRYPOINT ["./entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
